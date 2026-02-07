@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: lcl-hyscaler-personal-finance-tracker-backend
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_personal_finance_tracker
+    username: root
+    password: password
