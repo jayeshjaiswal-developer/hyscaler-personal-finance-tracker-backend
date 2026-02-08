@@ -5,3 +5,22 @@ spring:
     url: jdbc:mysql://localhost:3306/db_personal_finance_tracker
     username: root
     password: password
+  jpa:
+#    hibernate.ddl-auto: update
+    hibernate.ddl-auto: update
+    show-sql: true
+    properties.hibernate.format.sql: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: jayesh.developer546@gmail.com
+    password: hxdzcpvnoqhrykfg
+    properties.mail.smtp:
+      auth: true
+      starttls.enable: true
+
+server:
+  servlet:
+    context-path: /api
+
+

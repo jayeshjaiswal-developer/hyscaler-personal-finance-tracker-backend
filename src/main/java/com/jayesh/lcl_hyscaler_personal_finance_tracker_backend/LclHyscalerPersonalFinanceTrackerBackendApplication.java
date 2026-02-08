@@ -12,7 +12,6 @@ public class LclHyscalerPersonalFinanceTrackerBackendApplication {
         }catch(Exception e){
             System.out.println("Exception Catched");
         }
-
 	}
-
 }
+
