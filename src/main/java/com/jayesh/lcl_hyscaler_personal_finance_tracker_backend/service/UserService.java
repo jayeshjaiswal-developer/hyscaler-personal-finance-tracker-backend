@@ -83,6 +83,7 @@ public class UserService {
         boolean isOTPValid = passwordEncoder.matches(otp,dbUser.getOtp());
         if (isOTPValid){
             String token = jwtUtil.generateToken(dbUser.getEmail());
+            System.out.println("Token generatedd: "+token);
             String message =  "OTP Verified Successfully";
             return Map.of(
                     "token", token,

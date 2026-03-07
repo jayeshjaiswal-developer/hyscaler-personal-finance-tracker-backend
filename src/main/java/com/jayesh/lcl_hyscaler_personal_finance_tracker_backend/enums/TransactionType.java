@@ -1,4 +1,6 @@
 package com.jayesh.lcl_hyscaler_personal_finance_tracker_backend.enums;
 
 public enum TransactionType {
+    INCOME,
+    EXPENSE
 }

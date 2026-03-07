@@ -1,4 +1,9 @@
 package com.jayesh.lcl_hyscaler_personal_finance_tracker_backend.enums;
 
 public enum Frequency {
+    DAILY,
+    WEEKLY,
+    MONTHLY,
+    QUARTERLY,
+    YEARLY
 }

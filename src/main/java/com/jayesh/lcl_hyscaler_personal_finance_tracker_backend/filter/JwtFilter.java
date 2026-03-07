@@ -28,8 +28,12 @@ public class JwtFilter extends OncePerRequestFilter {
 
         String header = request.getHeader("Authorization");
         if(header!=null && header.startsWith("Bearer ")){
+//            String token = header.substring(8, header.length()-1); //to solve "" issue when sending from localstorage.
             String token = header.substring(7);
+            System.out.println("Received token: "+token);
+
             String username = jwtUtil.extractUsername(token);
+
 
             UsernamePasswordAuthenticationToken auth = new UsernamePasswordAuthenticationToken(username, null, List.of());
             SecurityContextHolder.getContext().setAuthentication(auth);
